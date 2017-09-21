@@ -1,0 +1,17 @@
+{
+  "name": "dummy-api",
+  "version": "0.1.0",
+  "description": "Application providing dummy API endpoints for testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vkuman1",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2"
+  }
+}
