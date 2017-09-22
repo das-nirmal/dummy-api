@@ -8,7 +8,7 @@ app.use(morgan('tiny'));
 
 app.use((req, res) => {
     res.json({
-        message: `Received ${req.method} Request at ${req.url}`
+        message: `Visualization Dummy API: Received ${req.method} Request at ${req.url}`
     });
 });
 
