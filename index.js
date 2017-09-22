@@ -14,6 +14,11 @@ app.use((req, res) => {
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
+app.listen(port, (err) => { 
+
+    if(err) {
+        return console.log(`Error encountered listening at port ${port}`);
+    }
+
     console.log(`Server is up on port ${port}`);
 });

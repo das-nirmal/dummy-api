@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "NODE_ENV=production PORT=80 pm2 start index.js --name=dummy-api",
+    "prod-win": "set NODE_ENV=production && set PORT=80 && pm2 start index.js --name=dummy-api"
   },
   "author": "vkuman1",
   "license": "ISC",
